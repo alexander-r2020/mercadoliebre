@@ -26,10 +26,15 @@ a{
 }
 h2{
     font-size: 24px;
+    color: var(--gris-oscuro);
+}
+img{
+    width: 100%;
 }
 /********************** HEADER ********************/
 header{
     background-color: var(--amarillo);
+    width: 100%;
 }
 .logo{
     width: 50%;
@@ -49,6 +54,9 @@ header{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.menu ul{
+    margin-bottom: 20px;
+}
 .burger-menu{
     margin-top: 20px;
     padding-bottom: 20px;
@@ -64,9 +72,24 @@ header{
     border-radius: 5px;
 }
 /****************** SECCIONES PRINCIPALES(MAIN)*********/
+main{
+    background-color: var(--gris-claro);
+    width: 100%;
+}
+.visita article,
+.ofertas article{
+    width: 80%;
+    margin: auto;
+}
+.titulo{
+    text-align: center;
+}
 
-.precio{
+.descripcion-producto h4{
     font-size: 18px;
+}
+.descuento{
+    color: var(--verde)
 }
 .descuento,.descripciones{
     font-size: 16px;
