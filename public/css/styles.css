@@ -107,7 +107,8 @@ footer p{
     color: var(--gris-oscuro);
 }
 .secciones-footer{
-    margin-top: 40px;
+    margin:60px auto 0;
+    width: 67%;
 }
 .secciones-footer i{
     font-size: 2em;
