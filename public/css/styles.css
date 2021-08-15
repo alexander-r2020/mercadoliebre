@@ -47,17 +47,14 @@ header{
 }
 .mensaje{
     margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
 }
 .menu{
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.menu ul{
-    margin-bottom: 20px;
-}
+
 .burger-menu{
     margin-top: 20px;
     padding-bottom: 20px;
@@ -75,18 +72,21 @@ main{
     width: 100%;
     padding-bottom: 20px;
 }
-.visita article,
-.ofertas article{
+
+.visita,
+.ofertas{
     width: 90%;
-    margin: 10px auto;
+    margin: auto;
 }
 .titulo{
+    padding-top: 10px ;
     text-align: center;
     
 }
 .visita-producto,
 .ofertas-producto{
     background-color: white;
+    margin-top: 10px;
 }
 .descripcion-producto{
     border-top: 1px solid var(--gris-claro);
@@ -97,9 +97,7 @@ main{
     color: var(--verde);
     border:1px solid var(--verde);
     border-radius: 70%;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    
+    padding: 5px 15px 15px 5px;
 }
 .descripcion-producto h4{
     font-size: 18px;
@@ -124,8 +122,8 @@ footer p{
     color: var(--gris-oscuro);
 }
 .secciones-footer{
-    margin:60px auto 0;
-    width: 67%;
+    margin:50px auto 0;
+    width: 70%;
 }
 .secciones-footer i{
     font-size: 2em;
@@ -149,7 +147,24 @@ footer p{
 
 @media (min-width:361px){
 
+    /********HEADER*******/
+    .menu{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    /******** MAIN********/
+    
+    .descripciones{
+        display: block;
+    }
+    .visita-producto,
+    .ofertas-producto{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
 }
 @media (min-width:769px){
-
 }
