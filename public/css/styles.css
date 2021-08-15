@@ -96,8 +96,9 @@ main{
 .descripcion-producto span i{
     color: var(--verde);
     border:1px solid var(--verde);
-    border-radius: 60%;
-    padding: 9px;
+    border-radius: 70%;
+    padding-right: 15px;
+    padding-bottom: 15px;
     
 }
 .descripcion-producto h4{
