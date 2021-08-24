@@ -36,6 +36,10 @@ header{
     background-color: var(--amarillo);
     width: 100%;
 }
+.contenedor{
+    display: flex;
+    align-items: center;
+}
 .logo{
     width: 50%;
     margin-left: 15px;
@@ -43,7 +47,9 @@ header{
     padding-bottom: 10px;
 }
 .busqueda{
+    width: 50%;
     margin-left: 15px;
+
 }
 .mensaje{
     margin-top: 20px;
@@ -110,15 +116,23 @@ main{
     border-radius:50%;  
     position:absolute;   
     right:20px;    
-    bottom: 75px;
+    bottom: 76px;
 }
-.descripcion-producto h4{
+.descripcion-precios{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.descripcion-precios h4{
     font-size: 18px;
+    width: 30%;
 }
+
 .descripciones{
     display: none;
 }
 .descuento{
+    width: 70%;
     color: var(--verde);
 }
 .descuento,.descripciones{
@@ -162,10 +176,10 @@ footer p{
 
     /********HEADER*******/
     .menu{
-        display: block;
+        /* display: block; */
     }
     .burger-menu{
-        display: none;
+        display: block;
     }
 
     /******** MAIN********/
