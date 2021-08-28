@@ -114,7 +114,8 @@ main{
     margin: auto;
 }
 .titulo{
-    padding-top: 10px ;
+    padding-top: 25px ;
+    padding-bottom: 20px;
     text-align: center;
     
 }
@@ -279,6 +280,33 @@ footer p{
 
     .burger-menu{
         display: none;
+    }
+
+    /********* MAIN ***********/
+    .visita,
+    .ofertas{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .titulo{
+        width: 100%;
+        text-align: left;
+    }
+    .visita-producto,
+    .ofertas-producto{
+        
+        width: 48%;
+    }
+
+}
+
+@media (min-width:1024px){
+    /*********** MAIN *****************/
+    .visita-producto,
+    .ofertas-producto{
+        
+        width: 24%;
     }
 
 }
