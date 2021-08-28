@@ -38,18 +38,47 @@ header{
 }
 .contenedor{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    width: 90%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: center;
 }
 .logo{
     width: 50%;
-    margin-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    
+}
+.logo img{
+    width: 95%;
 }
 .busqueda{
     width: 50%;
-    margin-left: 15px;
+    height: 45px;
+    position: relative;
 
+}
+.busqueda input{
+    width: 100%;
+    height: inherit;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.busqueda button {
+    height: inherit;
+    border: none;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    border-radius: 6px;
+}
+.busqueda button i{
+    color: var(--gris-oscuro);
+    font-size: 1.5rem;
 }
 .mensaje{
     margin-top: 20px;
@@ -175,9 +204,7 @@ footer p{
 @media (min-width:361px){
 
     /********HEADER*******/
-    .menu{
-        /* display: block; */
-    }
+    
     .burger-menu{
         display: block;
     }
@@ -194,4 +221,64 @@ footer p{
 
 }
 @media (min-width:769px){
+
+    /****** HEADER*******/
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .logo,
+    .mensaje{
+        width: 36%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .busqueda{
+        width: 26%;
+        height: 30px;
+    }
+    .busqueda input{
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+    .busqueda button i{
+        color: var(--gris-oscuro);
+        font-size: 1rem;
+    }
+    .mensaje{
+        margin-top: 0;
+        text-align: center;
+    }
+    .mensaje p{
+        font-size: .8rem;
+    }
+     
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 35%;
+        
+    }
+    .menu ul li{
+        font-size: .8rem;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
 }
