@@ -308,5 +308,11 @@ footer p{
         
         width: 24%;
     }
+    .descripcion-precios{
+        justify-content: space-between;
+    }
+    .descuento{
+        width: 35%;
+    }
 
 }
