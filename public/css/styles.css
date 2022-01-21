@@ -125,11 +125,16 @@ main{
     margin-top: 10px;
     /***** position ****/
     position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
 }
 .descripcion-producto{
     border-top: 1px solid var(--gris-claro);
     padding: 15px;
 }
+
 
 .descripcion-producto span i{
     color: var(--verde);
@@ -146,7 +151,8 @@ main{
     border-radius:50%;  
     position:absolute;   
     right:20px;    
-    bottom: 76px;
+    bottom: 57px;
+    transition: 300ms;
 }
 .descripcion-precios{
     display: flex;
@@ -159,6 +165,10 @@ main{
 }
 
 .descripciones{
+    font-size: 1.5em;
+    width: 100%;
+    color: var(--gray);
+    transition: 300ms;
     display: none;
 }
 .descuento{
@@ -168,10 +178,25 @@ main{
 .descuento,.descripciones{
     font-size: 16px;
 }
+.visita-producto,.ofertas-producto:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+.visita-producto,.ofertas-producto:hover .descripciones{
+    display: block;
+}
+.visita-producto,.ofertas-producto:hover .descripcion-producto i{
+    bottom: 74px;
+}
+.visita-producto,.ofertas-producto:hover i {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+  }
 /******************* PIE DE PAGINA (FOOTER)***************/
 
 footer{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 footer p{
@@ -213,7 +238,7 @@ footer p{
     /******** MAIN********/
     
     .descripciones{
-        display: block;
+        display: none;
     }
     .visita-producto,
     .ofertas-producto{
@@ -314,5 +339,18 @@ footer p{
     .descuento{
         width: 35%;
     }
+    .visita-producto:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+    .visita-producto:hover .descripciones{
+        display: block;
+    }
+    .visita-producto:hover .descripcion-producto i{
+        bottom: 74px;
+    }
+    .visita-producto:hover i {
+        transform: rotate(360deg);
+        box-shadow: 0 0 5px var(--green);
+      }
 
 }

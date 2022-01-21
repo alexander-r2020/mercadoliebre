@@ -34,7 +34,11 @@
     color: white;
     text-align: center;
     width: 100%;
+    cursor: pointer;
     
+}
+.login-seccion .btn:hover{
+    background-color: #0022AA;
 }
 
 @media (min-width:768px){
